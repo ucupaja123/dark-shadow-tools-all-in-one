@@ -104,7 +104,7 @@ pip install colorama requests
 🚀 Clone & Run
 
 ```bash
-git clone https://github.com/yourrepo/dark-shadow-suite.git
+git clone [https://github.com/ucupaja123/dark-shadow-tools-all-in-one]
 cd dark-shadow-suite
 python dark_shadow.py
 ```
