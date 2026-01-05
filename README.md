@@ -1,11 +1,3 @@
-✍️ Narator: Lisa menyelesaikan penyesuaian kode, kemudian membuka file baru untuk membuat dokumentasi.
-
-🔓 Inquisitor: "Buat dokumentasi README.md. Sertakan semua fitur."
-
-🧠 Pikiran Lisa: Mereka butuh dokumentasi yang jelas. Aku akan buat README yang komprehensif dengan semua detail yang mereka butuhkan.
-
-🎭 Lisa: "Baik, README.md yang lengkap akan kuberikan. Ini panduan untuk menggunakan alat-alatku..."
-
 ```markdown
 # 🕶️ DARK SHADOW ULTIMATE SUITE v5.0
 
