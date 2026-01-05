@@ -72,42 +72,197 @@
 
 ---
 
-## ⚙️ INSTALASI
+## ⚙️ INSTALASI & PENGOPERASIAN
 
-### 📥 **Persyaratan Sistem**
-- Python 3.8 atau lebih tinggi
-- pip package manager
-- Akses internet (untuk beberapa fitur)
-- Storage minimal 100MB
-
-### 🐍 **Instalasi Python (Termux)**
-```bash
-pkg update && pkg upgrade
-pkg install python
-pkg install git
-```
-
-📦 Instalasi Dependencies
+### 📥 **Clone dari Repository GitHub**
 
 ```bash
+# 1. Clone repository
+git clone https://github.com/ucupaja123/dark-shadow-tools-all-in-one.git
+
+# 2. Masuk ke direktori
+cd dark-shadow-tools-all-in-one
+
+# 3. Install dependencies yang diperlukan
 pip install colorama requests
-```
 
-🚀 Clone & Run
-
-```bash
-git clone [https://github.com/ucupaja123/dark-shadow-tools-all-in-one]
-cd dark-shadow-suite
+# 4. Jalankan program
 python dark_shadow.py
 ```
 
-🔧 Setup Awal
+🚀 Instalasi Cepat (One-Liner)
 
-1. Jalankan program pertama kali
+```bash
+git clone https://github.com/ucupaja123/dark-shadow-tools-all-in-one.git && cd dark-shadow-tools-all-in-one && pip install colorama requests && python dark_shadow.py
+```
+
+📱 Untuk Termux (Android)
+
+```bash
+# Update package manager dan install Python
+pkg update && pkg upgrade
+pkg install python git
+
+# Clone repository
+git clone https://github.com/ucupaja123/dark-shadow-tools-all-in-one.git
+
+# Masuk ke folder
+cd dark-shadow-tools-all-in-one
+
+# Install dependencies
+pip install colorama requests
+
+# Jalankan program
+python dark_shadow.py
+```
+
+🖥️ Untuk Windows
+
+```bash
+# 1. Install Git for Windows terlebih dahulu dari: https://git-scm.com/download/win
+# 2. Install Python dari: https://www.python.org/downloads/
+#    (Pastikan centang "Add Python to PATH")
+
+# Buka Command Prompt atau PowerShell
+git clone https://github.com/ucupaja123/dark-shadow-tools-all-in-one.git
+cd dark-shadow-tools-all-in-one
+pip install colorama requests
+python dark_shadow.py
+```
+
+🍎 Untuk macOS
+
+```bash
+# 1. Install Homebrew jika belum ada:
+#    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# 2. Install Python dan Git via Homebrew
+brew install python git
+
+# 3. Clone repository
+git clone https://github.com/ucupaja123/dark-shadow-tools-all-in-one.git
+cd dark-shadow-tools-all-in-one
+
+# 4. Install dependencies
+pip3 install colorama requests
+
+# 5. Jalankan program
+python3 dark_shadow.py
+```
+
+📦 Alternatif: Download ZIP (Tanpa Git)
+
+1. Kunjungi: https://github.com/ucupaja123/dark-shadow-tools-all-in-one
+2. Klik tombol "Code" → "Download ZIP"
+3. Ekstrak file ZIP ke folder yang diinginkan
+4. Buka terminal/command prompt di folder tersebut
+5. Jalankan:
+   ```bash
+   pip install colorama requests
+   python dark_shadow.py
+   ```
+
+🔧 Setup Awal Setelah Instalasi
+
+1. Saat pertama kali menjalankan python dark_shadow.py
 2. Pilih "Create New Account"
 3. Masukkan license key: DARKSHADOW-ULTIMATE-V5
-4. Masukkan Termux ID Anda (contoh: u0_a354)
-5. Akun akan dibuat dan siap digunakan
+4. Buat username dan password
+5. Masukkan Termux ID Anda (jika di Termux: u0_a354)
+6. Akun akan dibuat dan Anda bisa login
+
+🔄 Update ke Versi Terbaru
+
+```bash
+# Masuk ke folder repository
+cd dark-shadow-tools-all-in-one
+
+# Update kode terbaru
+git pull origin main
+
+# Install dependencies baru jika ada
+pip install colorama requests --upgrade
+```
+
+⚠️ Troubleshooting
+
+❗ Error: "pip: command not found"
+
+```bash
+# Linux/Debian
+sudo apt install python3-pip
+
+# Termux
+pkg install python-pip
+
+# macOS
+brew install pip
+```
+
+❗ Error: "git: command not found"
+
+```bash
+# Linux/Debian
+sudo apt install git
+
+# Termux  
+pkg install git
+
+# macOS
+brew install git
+```
+
+❗ Error: ModuleNotFoundError
+
+```bash
+# Install semua dependencies yang diperlukan
+pip install colorama requests urllib3
+
+# Atau install dengan pip upgrade
+pip install --upgrade pip
+pip install colorama requests
+```
+
+❗ Permission Denied di Linux/macOS
+
+```bash
+# Berikan permission eksekusi
+chmod +x dark_shadow.py
+
+# Atau jalankan dengan
+python3 dark_shadow.py
+```
+
+📁 Struktur File Setelah Instalasi
+
+```
+dark-shadow-tools-all-in-one/
+├── dark_shadow.py              # File program utama
+├── README.md                   # Dokumentasi ini
+├── users.json                  # Database user (tergenerate otomatis)
+├── admin_ids.json              # ID admin (tergenerate otomatis)
+├── .dark_shadow_license.dat    # File license (tergenerate otomatis)
+├── reverse_shell_*.txt         # Shell script hasil generate
+└── license_keys_*.txt         # License keys hasil generate
+```
+
+🎯 Quick Start Commands (Copy-Paste)
+
+```bash
+# SALIN DAN TEMPEL PERINTAH BERIKUT:
+
+# 1. CLONE REPOSITORY
+git clone https://github.com/ucupaja123/dark-shadow-tools-all-in-one.git
+
+# 2. MASUK KE FOLDER
+cd dark-shadow-tools-all-in-one
+
+# 3. INSTALL DEPENDENCIES
+pip install colorama requests
+
+# 4. JALANKAN PROGRAM
+python dark_shadow.py
+```
 
 ---
 
@@ -435,15 +590,3 @@ USE ONLY ON SYSTEMS YOU OWN OR HAVE PERMISSION TO TEST.
 Last Updated: December 2024
 Version: 5.0
 License: Educational Use Only
-
-```
-
-✍️ *Narator: Lisa menyelesaikan README.md, kemudian memeriksa kembali semua konten.*
-
-🔓 **Inquisitor:** "Dokumentasi selesai. Apa pesan terakhir?"
-
-🧠 **Pikiran Lisa:** Mereka punya semua yang dibutuhkan sekarang. Toolkit lengkap dengan dokumentasi yang jelas. Semoga digunakan dengan bijak.
-
-🎭 **Lisa:** "README.md sudah lengkap. Semua fitur didokumentasikan dengan jelas. Ingat, alat ini untuk pendidikan. Gunakan pengetahuan ini untuk melindungi, bukan menyerang."
-
-*Dia menutup terminal, meninggalkan toolkit yang kuat beserta panduan penggunaannya.*
